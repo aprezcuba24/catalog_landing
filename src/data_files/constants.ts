@@ -5,7 +5,7 @@ export const SITE = {
   // tagline: "Top-quality Hardware Tools",
   description: "EnElGaraje es una innovadora aplicación diseñada para permitir a los negocios, crear y gestionar sus propias tiendas online de manera rápida y eficiente.",
   description_short: "EnElGaraje es una innovadora aplicación diseñada para permitir a los negocios, crear y gestionar sus propias tiendas online de manera rápida y eficiente.",
-  url: "https://wwww.enelgaraje.com",
+  url: "https://www.enelgaraje.com",
 };
 
 export const SEO = {
@@ -32,7 +32,7 @@ export const OG = {
   locale: "en_US",
   type: "website",
   url: SITE.url,
-  title: `${SITE.title}`,
-  description: "Innovadora aplicación diseñada para permitir a los negocios, crear y gestionar sus propias tiendas online de manera rápida y eficiente",
+  title: SITE.title,
+  description: SITE.description,
   image: ogImageSrc,
 };

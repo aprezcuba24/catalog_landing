@@ -7,7 +7,7 @@ import starlight from "@astrojs/starlight";
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://screwfast.uk",
+  site: "https://www.enelgaraje.com",
   image: {
     domains: ["images.unsplash.com"],
   },
@@ -23,7 +23,9 @@ export default defineConfig({
   // },
   prefetch: true,
   integrations: [
-    tailwind(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
     sitemap({
       i18n: {
         defaultLocale: "en", // All urls that don't contain `fr` after `https://screwfast.uk/` will be treated as default locale, i.e. `en`
@@ -100,14 +102,14 @@ export default defineConfig({
           tag: "meta",
           attrs: {
             property: "og:image",
-            content: "https://screwfast.uk" + "/social.webp",
+            content: "https://www.enelgaraje.com" + "/Imagen-1.png",
           },
         },
         {
           tag: "meta",
           attrs: {
             property: "twitter:image",
-            content: "https://screwfast.uk" + "/social.webp",
+            content: "https://www.enelgaraje.com" + "/Imagen-1.png",
           },
         },
       ],

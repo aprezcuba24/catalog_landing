@@ -2,49 +2,59 @@
 // Define props from Astro
 const { title, subTitle } = Astro.props;
 import { Image } from "astro:assets";
-import villotalleres from "@images/logotipos/villotalleres.png";
-import heladoMio from "@images/logotipos/helado-mio.png";
-import alvarezautomotriz from "@images/logotipos/alvarezautomotriz.png";
-import ire from "@images/logotipos/ire.jpg";
+import villotalleres from "@images/logotipos/vilo_talleres.png";
+import heladoMio from "@images/logotipos/helado_mio.png";
+import alvarezautomotriz from "@images/logotipos/alavarez_automotriz.png";
+import ire from "@images/logotipos/ire.png";
 import machitos from "@images/logotipos/machitos.png";
-import produccionesgranado from "@images/logotipos/produccionesgranado.png";
-import logo from "@images/logotipos/logo.png";
+import produccionesgranado from "@images/logotipos/producciones_granado.png";
+import wanalab from "@images/logotipos/wanalab.png";
+import livinghavana from "@images/logotipos/living_havana.png";
+// import { cn } from 'class-variance-authority';
+// import { Button } from "shadcn-ui";
+// import { MyButton } from 'shadcn-components';
+
 
 const clients = [
   {
     image: villotalleres,
     alt: 'Villotalleres',
-    height: 150,
-  },
-  {
-    image: heladoMio,
-    alt: 'Helado mio',
-    height: 100,
+    height: 120,
   },
   {
     image: alvarezautomotriz,
     alt: 'Alvarez Automotriz',
-    height: 250,
+    height: 120,
+  },
+  {
+    image: wanalab,
+    alt: 'wanalab',
+    height: 120,
   },
   {
     image: ire,
     alt: 'Ire',
-    height: 100,
+    height: 120,
   },
   {
     image: machitos,
     alt: 'machitos',
-    height: 100,
+    height: 120,
   },
   {
     image: produccionesgranado,
     alt: 'produccionesgranado',
-    height: 100,
+    height: 120,
   },
   {
-    image: logo,
-    alt: 'logo',
-    height: 100,
+    image: heladoMio,
+    alt: 'Helado mio',
+    height: 120,
+  },
+  {
+    image: livinghavana,
+    alt: 'livinghavana',
+    height: 120,
   },
 ]
 
@@ -59,7 +69,7 @@ interface Props {
   class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
 >
   <!-- Title and description -->
-  <div class="mx-auto mb-6 w-full space-y-1 text-center sm:w-1/2 lg:w-1/3">
+  <div class="mx-auto mb-10 w-full space-y-1 text-center sm:w-1/2 lg:w-1/3">
     <h2
       class="text-balance text-2xl font-bold leading-tight text-neutral-800 dark:text-neutral-200 sm:text-3xl"
     >
@@ -74,7 +84,7 @@ interface Props {
     }
   </div>
   <div
-    class="flex flex-col flex-wrap items-center justify-center gap-y-2 sm:flex-row sm:gap-x-12 sm:gap-y-0 lg:gap-x-24"
+    class="flex flex-col flex-wrap items-center justify-center gap-y-10 sm:flex-row sm:gap-x-12 lg:gap-x-24"
   >
     {clients.map(({ image, alt, height }) => (
       <Image

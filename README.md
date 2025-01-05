@@ -452,7 +452,7 @@ To customize SEO settings, modify the values in the `constants.ts` file. Key con
 // constants.ts
 
 export const SITE = {
-  title: "ScrewFast",
+  title: "EnElGaraje",
   // Other SITE properties...
 };
 
@@ -462,7 +462,7 @@ export const SEO = {
 };
 
 export const OG = {
-  title: `${SITE.title}: Hardware Tools & Construction Services`,
+  title: `${SITE.title}: Innovadora aplicación diseñada para permitir a los negocios, crear y gestionar sus propias tiendas online de manera rápida y eficiente`,
   // Other OG properties...
 };
 ```
@@ -520,7 +520,7 @@ Structured data in JSON-LD format can be managed by the `Meta.astro` component, 
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "ScrewFast",
-    "url": "https://screwfast.uk",
+    "url": "https://www.enelgaraje.com",
     "description": "Discover top-quality hardware tools and services"
   }}
 >

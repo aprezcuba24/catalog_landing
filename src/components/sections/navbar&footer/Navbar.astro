@@ -7,6 +7,7 @@ import Authentication from "../misc/Authentication.astro";
 import enStrings from "@utils/navigation.ts";
 import frStrings from "@utils/fr/navigation.ts";
 import BrandLogo from "@images/Logo_sin_fondo.png";
+import BrandLogoDarkMode from "@images/Logo-blanco-sin-fondo.png";
 import LanguagePicker from "@components/ui/LanguagePicker.astro";
 
 // Select the correct translation based on the page's lang prop:
@@ -31,7 +32,8 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
         aria-label="Brand"
       >
         <!-- <BrandLogo class="h-auto w-24" /> -->
-        <Image src={BrandLogo} alt="aaaa" class="h-auto w-16"/>
+        <Image src={BrandLogo} alt="aaaa" class="h-auto w-16 dark:hidden"/>
+        <Image src={BrandLogoDarkMode} alt="aaaa" class="h-auto w-16 hidden dark:flex"/>
       </a>
       <!-- Collapse toggle for smaller screens -->
       <div class="ml-auto mr-5 md:hidden">
